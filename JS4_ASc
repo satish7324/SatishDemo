@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Assignment-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+.A4{
+
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+</style>
+
+<body>
+
+    <div class="A4">
+
+            <h2>Please Select your Technology</h2>
+
+            <input type="radio" id="PHP"  value="PHP" name="TECHnolofgy" onclick="myfunc()">
+            <label for="PHP">PHP</label>
+
+            <input type="radio" id="ASP.NET"  value="ASP.NET" name="TECHnolofgy" onclick="myfunc()">
+            <label for="ASP.NET">ASP.NET</label>
+
+            <input type="radio" id="ASP"  value="ASP" name="TECHnolofgy" onclick="myfunc()">
+            <label for="ASP">ASP</label>
+
+            <input type="radio" id="JSP"  value="JSP" name="TECHnolofgy" onclick="myfunc()">
+            <label for="JSP">JSP</label>
+
+            <input type="radio" id="PERL"  value="PERL" name="TECHnolofgy" onclick="myfunc()">
+            <label for="PERL">PERL</label>
+
+            <input type="radio" id="Cold Fusion"  value="Cold Fusion" name="TECHnolofgy" onclick="myfunc()">
+            <label for="Cold Fusion">Cold Fusion</label>
+
+            <input type="radio" id="Other"  value="Other" name="TECHnolofgy" onclick="myfunc()">
+            <label for="Other" onclick="myfunc()">Other</label>  <br><br>
+
+            <span id="demo"></span> <br> <br>
+            <span id="demo1"></span>
+            
+            <!-- <button type="button" onclick=" checkButton()"> Submit </button>        -->
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function myfunc() {
+    const element = document.getElementsByName("TECHnolofgy");
+
+    for(i=0;i<element.length;i++){
+        if(element[i].checked){
+            document.getElementById("demo").innerHTML = "You have Selected: " + element[i].id;
+            document.getElementById("demo1").innerHTML = element[i].id+ " is a beautifull language ";
+            
+        }
+    }
+}
+
+
+
