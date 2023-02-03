@@ -1,0 +1,60 @@
+
+
+// Object with Function & Arrays 
+
+ var x = {
+
+    FirstName: 'satish',
+    LastName: 'singh',
+    Age: 23,
+    Email : 'singhsatish7324@gmail.com',
+    mobileNo : +917324995664,
+    Fav_Movies : ["Dhoom", "Sholey", "Hum"],
+    sallery : function(){
+        return 35000
+    }
+ }
+
+ console.log(x);
+ console.log(x.sallery());
+
+
+
+ // Number Method  ----------> it will Convert any Value to Number like
+
+ var a = "99";
+ var num = Number(a);           // Number() is a function
+ console.log(num);             // I have converted string to Number
+
+  var p = true;    
+  var num1 = Number(p);
+  console.log(num1);               // output is 1 
+  
+
+
+  
+//.parseInt() method           //.parseInt it convert decimal to number
+  var Q = "10.90";    
+  var num2 = parseInt(Q);
+  console.log(num2);              
+
+
+
+  //.parsefloat() method         //.parsefloat  it works as a .parseInt bt it will return the decimal value aslo
+  var R = 10.90;    
+  var num3 = parseFloat(R);
+  console.log(num3);              
+
+
+  //.isFinite()          // it will check the Given Element is Finite or not if it is no then i will retun false
+  var S = Infinity;    
+  var num4 = Number.isFinite(S);         //Number.isFinite()----> likhne ka tarika
+  console.log(num4);              
+
+
+
+  //.isInteger()      // it will check the Given Element is inter value or not if it is no then i will retun false
+
+
+  let Z = 20.22;
+  console.log(Number.isInteger(Z)); 
